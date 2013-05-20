@@ -209,6 +209,13 @@ on post-fs-data
     chown radio system /sys/class/power_supply/battery/siop_activated
     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/boostpulse
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/sampling_rate
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/up_threshold
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/io_is_busy
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/sampling_down_factor
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/freq_step
+    chown root system /sys/devices/system/cpu/cpufreq/pegasusq/down_differential
     chown radio system /sys/devices/system/cpu/busfreq/curr_freq
     chown radio system /sys/module/mali/parameters/mali_dvfs_control
     chown system radio /sys/bus/platform/devices/s5p-tmu/lot_id
@@ -222,6 +229,13 @@ on post-fs-data
     chmod 0660 /sys/class/power_supply/battery/siop_activated
     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/boostpulse
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/sampling_rate
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/up_threshold
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/io_is_busy
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/sampling_down_factor
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/freq_step
+    chmod 0664 /sys/devices/system/cpu/cpufreq/pegasusq/down_differential
     chmod 0660 /sys/devices/system/cpu/busfreq/curr_freq
     chmod 0660 /sys/module/mali/parameters/mali_dvfs_control
     chmod 0664 /sys/bus/platform/devices/s5p-tmu/lot_id
